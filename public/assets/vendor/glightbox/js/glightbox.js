@@ -942,8 +942,7 @@
     var slideMedia = slide.querySelector('.gslide-media');
     var videoPlayers = this.getAllPlayers();
     addClass(slideContainer, 'gvideo-container');
-    slideMedia.insertBefore(createHTML('<div className="
-gvideo-wrapper"></div>'), slideMedia.firstChild);
+    slideMedia.insertBefore(createHTML('<div class="gvideo-wrapper"></div>'), slideMedia.firstChild);
     var videoWrapper = slide.querySelector('.gvideo-wrapper');
     injectAssets(this.settings.plyr.css, 'Plyr');
     var url = data.href;
@@ -965,8 +964,7 @@ gvideo-wrapper"></div>'), slideMedia.firstChild);
         html += 'x-webkit-airplay="allow" ';
         html += 'playsinline ';
         html += 'controls ';
-        html += 'className="
-gvideo-local">';
+        html += 'class="gvideo-local">';
         html += "<source src=\"".concat(url, "\">");
         html += '</video>';
         customPlaceholder = createHTML(html);
@@ -1394,8 +1392,7 @@ gvideo-local">';
           return subString;
         }
         div = null;
-        return subString + '... <a href="#" className="
-desc-more">' + wordBoundary + '</a>';
+        return subString + '... <a href="#" class="desc-more">' + wordBoundary + '</a>';
       }
     }, {
       key: "descriptionEvents",

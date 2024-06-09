@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import { Header } from './components/Header';
-import MainLayout from './layout/MainLayout';
+import "./App.css";
+
+import CustomRoutes from "./routing/CustomRoutes";
 
 function App() {
-    return (
-        <>
-            <MainLayout />
-        </>
-    );
+  return (
+    <>
+      <CustomRoutes />
+    </>
+  );
 }
 
 export default App;
